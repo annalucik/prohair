@@ -1,0 +1,69 @@
+@use "sass:color";
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.footer {
+    background-color: $beige, 0.95;
+    padding: 60px 6% 40px;
+    border-top: 1px solid rgba($light-brown, 0.4);
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+
+        @include desktop {
+            grid-template-columns: repeat(4, 1fr);
+            text-align: left;
+            gap: 20px;
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__label {
+        font-family: $font-header;
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $light-brown;
+        font-weight: 700;
+    }
+
+    &__content {
+        font-family: $font-body;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: rgba($dark-brown, 0.8);
+        margin: 0;
+    }
+    
+    &__link {
+        color: rgba($dark-brown, 0.8);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        display: block;
+        margin-bottom: 8px;
+
+        &:hover {
+            color: $light-brown;
+        }
+    }
+
+    &__bottom {
+        margin-top: 60px;
+        padding-top: 24px;
+        border-top: 1px solid rgba($light-brown, 0.06);
+        text-align: center;
+        font-size: 0.75rem;
+        color: rgba($dark-brown, 0.4);
+        letter-spacing: 0.5px;
+    }
+}

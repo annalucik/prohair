@@ -1,0 +1,18 @@
+@use 'abstracts/fonts';
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+
+@use 'base/reset';
+
+@use 'components/header';
+@use 'components/nav';
+@use 'components/burger';
+@use 'components/section';
+@use 'components/footer';
+
+@use 'layout/hero';
+@use 'layout/price';
+@use 'layout/course';
+@use 'layout/contacts';
+
+@use 'layout/legal.scss';

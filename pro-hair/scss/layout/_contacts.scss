@@ -1,0 +1,140 @@
+@use "sass:color";
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.contacts {
+  background: color.adjust($beige, $lightness: 2%);
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 6%;
+    right: 6%;
+    height: 1px;
+    background: linear-gradient(to right,
+        transparent,
+        rgba($light-brown, 0.2) 30%,
+        rgba($light-brown, 0.2) 70%,
+        transparent);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+    background: rgba($white, 0.6);
+    border: 1px solid rgba($light-brown, 0.12);
+    border-top: 2px solid rgba($light-brown, 0.28);
+    border-radius: 2px;
+    backdrop-filter: blur(6px);
+    box-shadow:
+      0 2px 0 rgba($light-brown, 0.07),
+      0 20px 50px rgba($dark-brown, 0.05),
+      inset 0 1px 0 rgba($white, 0.8);
+    overflow: hidden;
+
+    @include desktop {
+      flex-direction: row;
+      max-width: 800px;
+    }
+  }
+
+  &__divider {
+    width: auto;
+    height: 1px;
+    flex-shrink: 0;
+    background: linear-gradient(to right,
+        transparent,
+        rgba($light-brown, 0.2) 20%,
+        rgba($light-brown, 0.2) 80%,
+        transparent);
+
+    @include desktop {
+      width: 1px;
+      height: auto;
+      background: linear-gradient(to bottom,
+          transparent,
+          rgba($light-brown, 0.2) 20%,
+          rgba($light-brown, 0.2) 80%,
+          transparent);
+    }
+  }
+
+  &__link {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 40px 30px;
+    text-decoration: none;
+    position: relative;
+    transition: background 0.3s ease;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 20%;
+      right: 20%;
+      height: 2px;
+      background: $light-brown;
+      transform: scaleX(0);
+      transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      transform-origin: center;
+    }
+
+    &:hover {
+      background: rgba($light-brown, 0.02);
+
+      &::after {
+        transform: scaleX(1);
+      }
+
+      .contacts__icon {
+        color: $light-brown;
+        transform: translateY(-3px);
+      }
+
+      .contacts__value {
+        color: $light-brown;
+      }
+    }
+
+    @include desktop {
+      padding: 52px 40px;
+    }
+  }
+
+  &__icon {
+    color: rgba($dark-brown, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  &__label {
+    font-family: $font-body;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $light-brown;
+    opacity: 0.9;
+  }
+
+  &__value {
+    font-family: $font-header;
+    font-size: 1.2rem;
+    color: $dark-brown;
+    font-weight: 400;
+    transition: color 0.3s ease;
+  }
+}

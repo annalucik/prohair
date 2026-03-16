@@ -1,0 +1,103 @@
+@use "sass:color";
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.legal-page {
+    background-color: rgba($white, 0.5);
+    min-height: 100vh;
+    padding: 100px 5%;
+
+    &__container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    &__header {
+        margin-bottom: 40px;
+        border-bottom: 1px solid rgba($light-brown, 0.15);
+        padding-bottom: 16px;
+    }
+
+    &__title {
+        font-family: $font-header;
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+        color: $dark-brown;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+
+    &__last-update {
+        font-family: $font-body;
+        font-size: 0.8rem;
+        color: rgba($light-brown, 0.8);
+        text-transform: uppercase;
+    }
+
+    &__content {
+        section {
+            padding: 0;
+            background: none;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-family: $font-header;
+            font-size: 1.25rem;
+            color: $light-brown;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: $font-body;
+            font-size: 18px;
+            color: rgba($dark-brown, 0.8);
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+
+        ul {
+            li {
+                list-style-type: disc;
+                padding-left: 8px;
+            }
+        }
+
+        ol {
+            padding-left: 20px;
+            margin-bottom: 25px;
+            list-style-type: decimal;
+
+            li {
+                padding-left: 8px;
+                margin-bottom: 12px;
+                font-family: $font-body;
+                font-size: 18px;
+                line-height: 1.5;
+                color: rgba($dark-brown, 0.8);
+                display: list-item;
+            }
+        }
+    }
+
+    &__back-link {
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 40px;
+        color: $light-brown;
+        text-decoration: none;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        transition: transform 0.3s ease;
+
+        &::before {
+            content: '←';
+            margin-right: 10px;
+        }
+
+        &:hover {
+            transform: translateX(-5px);
+        }
+    }
+}
