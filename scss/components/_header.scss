@@ -1,0 +1,76 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 6%;
+    background: rgba($white, 0.8);
+    border-bottom: 1px solid rgba($light-brown, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @include tablet {
+            gap: 40px;
+        }
+    }
+}
+
+.logo {
+    background-color: #fff;
+    width: 80px;
+    z-index: 2;
+    cursor: pointer;
+    user-select: none;
+}
+
+.lang-switcher {
+    margin-left: 0;
+    order: 2;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: $font-header;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-left: 20px;
+
+    .lang-link {
+        color: rgba($dark-brown, 0.5);
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &.active {
+            color: $light-brown;
+            font-weight: 700;
+        }
+
+        &:hover:not(.active) {
+            color: $light-brown;
+        }
+    }
+
+    .lang-divider {
+        color: rgba($light-brown, 0.2);
+        font-size: 0.7rem;
+    }
+}
+
+.burger {
+    order: 3;
+}
+
+.nav {
+    order: 1;
+}

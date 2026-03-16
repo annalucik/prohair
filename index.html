@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ProHair_pl</title>
+    <meta name="description"
+        content="Stylistka z 6-letnim doświadczeniem w przedłużaniu włosów. Specjalizacja: małe, precyzyjne kapsułki – niewidoczne, bezpieczne i delikatne dla włosów.">
+    <meta name="author" content="ProHair_pl">
+
+    <link rel="preload" href="assets/fonts/montserrat/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/montserrat/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <meta name="theme-color" content="#D2B48C">
+
+    <!-- todo -->
+    <!-- <meta property="og:type" content="website">
+    <meta property="og:url" content=""> <meta property="og:title" content="ProHair_pl | Przedłużanie i modyfikacja włosów">
+    <meta property="og:description" content="Naturalny efekt. Małe kapsułki. Maksymalny komfort.">
+    <meta property="og:image" content=""> <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="ProHair_pl | Przedłużanie i modyfikacja włosów">
+    <meta property="twitter:description" content="Naturalny efekt. Małe kapsułki. Maksymalny komfort.">
+    <meta property="twitter:image" content=""> -->
+    <!-- todo end -->
+
+    <link rel="preload" as="image" href="assets/images/hero.webp" fetchpriority="high">
+
+    <link rel="alternate" hreflang="uk" href="https://prohair.pl/uk/">
+    <link rel="alternate" hreflang="pl" href="https://prohair.pl/">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="/" class="logo">
+            <picture>
+                <source srcset="assets/images/logo.webp" type="image/webp">
+                <img src="assets/images/logo.jpg" alt="logo" height="45" loading="lazy">
+            </picture>
+        </a>
+
+        <div class="header__actions">
+            <nav class="nav">
+                <ul>
+                    <li><a href="/#price">Usługi</a></li>
+                    <li><a href="/#course">Oferta szkoleń</a></li>
+                    <li><a href="/#contacts">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <div class="lang-switcher">
+                <a href="/" class="lang-link active">PL</a>
+                <span class="lang-divider">|</span>
+                <a href="/uk/" class="lang-link">UA</a>
+            </div>
+
+            <button class="burger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Przedłużanie i&nbsp;modyfikacja włosów</h1>
+                    <p class="hero__subtitle">
+                        <span>Naturalny efekt.</span>
+                        <span>Małe kapsułki.</span>
+                        <span>Maksymalny komfort.</span>
+                    </p>
+                    <p class="hero__subtitle">Jestem stylistką z 6-letnim doświadczeniem w branży przedłużania włosów.
+                        Setki zadowolonych klientek oraz dziesiątki kursantek, które już pracują w branży beauty.
+                    </p>
+                    <p class="hero__subtitle">
+                        Specjalizuję się w przedłużaniu i modyfikacji włosów. Pracuję na małych, precyzyjnych kapsułkach
+                        — są niewidoczne, bezpieczne i wykonywane z troską o kondycję Twoich naturalnych włosów.
+                    </p>
+                    <a href="/#contacts" class="hero__btn">Zapisz się</a>
+                </div>
+                <div class="hero__image">
+                    <picture>
+                        <source srcset="assets/images/hero.webp" type="image/webp">
+                        <img src="assets/images/hero.jpg" alt="ProHair_pl" width="800" fetchpriority="high">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="price" class="price">
+            <h2 class="section-title">Usługi</h2>
+
+            <div class="price__item">
+                <h3 class="price__category-title">Zabiegi regeneracyjne</h3>
+                <div class="price__body">
+                    <div class="price__content">
+                        <p class="price__description">
+                            mają na celu odbudowę struktury włosów wewnątrz, przywrócenie im blasku i elastyczności.
+                            Idealne dla osób z uszkodzonymi, przesuszonymi lub zniszczonymi włosami, które potrzebują
+                            intensywnej regeneracji (nie dają wizualnego efektu wygładzenia, jak po keratynie)
+                        </p>
+                        <p class="price__note">Cena zabiegu zależy od gęstości oraz długości włosów:</p>
+                        <ul class="price__list">
+                            <li class="price__row">
+                                <span>Do 40 cm</span>
+                                <span>150 zł</span>
+                            </li>
+                            <li class="price__row">
+                                <span>Do 60 cm</span>
+                                <span>200 zł</span>
+                            </li>
+                            <li class="price__row">
+                                <span>Od 60 cm i więcej</span>
+                                <span>250 zł</span>
+                            </li>
+                            <li class="price__row price__row--extra">
+                                <span>Zabieg na włosy przedłużane</span>
+                                <span>+
+                                    80 zł</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price__image">
+                        <picture>
+                            <source srcset="assets/images/zabiegi-regeneracyjne.webp" type="image/webp">
+                            <img src="assets/images/zabiegi-regeneracyjne.jpg" alt="Zabiegi regeneracyjne">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price__item">
+                <h3 class="price__category-title">Peeling skóry</h3>
+                <div class="price__body">
+                    <div class="price__content">
+                        <p class="price__description">
+                            to zabieg, który polega na delikatnym złuszczaniu martwego naskórka i oczyszczaniu skóry
+                            głowy z zanieczyszczeń, resztek produktów do stylizacji i nadmiaru sebum. Zabieg ten pomaga
+                            odblokować mieszki włosowe, poprawia ukrwienie skóry, co może wspomóc wzrost włosów, a także
+                            pozostawia skórę głowy odświeżoną i zdrową.
+                        </p>
+                        <ul class="price__list">
+                            <li class="price__row">
+                                <span>Cena</span>
+                                <span>100 zł</span>
+                            </li>
+                            <li class="price__row">
+                                <span>Peeling skóry głowy w pakiecie z zabiegiem</span>
+                                <span>60 zł</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price__image">
+                        <picture>
+                            <source srcset="assets/images/peeling-skóry.webp" type="image/webp">
+                            <img src="assets/images/peeling-skóry.jpg" alt="Peeling skóry głowy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price__item">
+                <h3 class="price__category-title">Zabiegi termiczne</h3>
+                <div class="price__body">
+                    <div class="price__content">
+                        <p class="price__description">
+                            Zabiegi, mające na celu zmienić strukturę włosów, wyeliminować puch i loki o dowolnej
+                            intensywności. Wygładzają włosy i dyscyplinują, pomagają w zapuszczeniu długości.
+                        </p>
+                        <h4 class="price__sub-title">Botoks / Keratyna</h4>
+                        <ul class="price__list">
+                            <li class="price__row">
+                                <span>Do 35 cm</span>
+                                <span>300 zł</span>
+                            </li>
+                            <li class="price__row">
+                                <span>Do 45 cm</span>
+                                <span>400 zł</span>
+                            </li>
+                            <li class="price__row">
+                                <span>Do 55 cm</span>
+                                <span>500 zł</span>
+                            </li>
+                            <li class="price__row">
+                                <span>Do 65 cm</span>
+                                <span>600 zł</span>
+                            </li>
+                            <li class="price__row">
+                                <span>Od 75 cm</span>
+                                <span>700 zł</span>
+                            </li>
+                        </ul>
+                        <ul class="price__list price__list--footer">
+                            <li class="price__row price__row--info">
+                                <span>*podkład w pakiecie z zabiegiem</span>
+                                <span>80 zł</span>
+                            </li>
+                            <li class="price__row price__row--info">
+                                <span>*podcinanie końcówek</span>
+                                <span>gratis</span>
+                            </li>
+                            <li class="price__row price__row--info">
+                                <span>*peeling skóry głowy в pakiecie z zabiegiem</span>
+                                <span>60 zł</span>
+                            </li>
+                            <li class="price__row price__row--info">
+                                <span>*dopłata za włosy przedłużane</span>
+                                <span>100 zł</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price__image">
+                        <picture>
+                            <source srcset="assets/images/botoks-keratyna.webp" type="image/webp">
+                            <img src="assets/images/botoks-keratyna.jpg" alt="Botoks keratyna">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price__group">
+                <div class="price__item price__item--main">
+                    <h3 class="price__category-title">Przedłużanie włosów na kapsułki keratynowe</h3>
+                    <p class="price__description">
+                        Technika ta polega na łączeniu naturalnych lub bioproteinowych włosów z dodatkowymi kosmykami za
+                        pomocą specjalnych kapsułek z keratyną.
+                    </p>
+                </div>
+
+                <div class="price__item price__item--sub">
+                    <h4 class="price__sub-title">Włosy bioproteinowe</h4>
+                    <div class="price__body">
+                        <div class="price__content">
+                            <p class="price__description">
+                                Włosy bioproteinowe to syntetyczne włosy pokryte keratyną, które są bardzo podobne do
+                                naturalnych. Włosy te wymagają dodatkowej pielęgnacji i są jednorazowe. Przy podciąganiu
+                                używa się nowych włosów.
+                            </p>
+                            <ul class="price__list">
+                                <li class="price__row">
+                                    <span>Przedłużanie 100-120 gramów</span>
+                                    <strong>900 zł</strong>
+                                </li>
+                                <li class="price__row">
+                                    <span>Przedłużanie 120-160 gramów</span>
+                                    <strong>1100 zł</strong>
+                                </li>
+                                <li class="price__row">
+                                    <span>Zagęszczanie</span>
+                                    <strong>600-800 zł</strong>
+                                </li>
+                            </ul>
+                            <Ul class="price__list">
+                                <li class="price__row price__row--info">
+                                    <span>*włosy już wliczone в cenę</span>
+                                    <span></span>
+                                </li>
+                                <li class="price__row">
+                                    <span>Ściąganie przedłużanie</span>
+                                    <span>150 zl</span>
+                                </li>
+                                <li class="price__row">
+                                    <span>Ściąganie po innym salonie</span>
+                                    <span>300 zl</span>
+                                </li>
+                                <li class="price__row">
+                                    <span>Konsultacja</span>
+                                    <span>darmowa</span>
+                                </li>
+
+                            </Ul>
+                        </div>
+                        <div class="price__image">
+                            <picture>
+                                <source srcset="assets/images/bioproteinowe.webp" type="image/webp">
+                                <img src="assets/images/bioproteinowe.jpg" alt="bioproteinowe włosy">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price__tabs-section">
+                    <h4 class="price__sub-title">Włosy naturalne</h4>
+                    <p class="price__description">
+                        Używamy włosów wyłącznie dobrej jakości. Naturalne włosy dostępne w 3 kategoriach.
+                    </p>
+                    <ul class="price__tabs-nav">
+                        <li>
+                            <button class="price__tab-btn active" data-tab="standard">Standart</button>
+                        </li>
+                        <li>
+                            <button class="price__tab-btn" data-tab="lux">Lux</button>
+                        </li>
+                        <li>
+                            <button class="price__tab-btn" data-tab="exclusive">Ekskluzywne</button>
+                        </li>
+                    </ul>
+                    <div class="price__tabs-content">
+                        <div class="price__tab-panel active" id="standard">
+                            <div class="price__body">
+                                <div class="price__content">
+                                    <p class="price__description">
+                                        To naturalne farbowane włosy. Ścięte i zmiksowane z kilku głów. Mają bardziej
+                                        porowatą strukturę. Mogą być proste lub lekko falowane. Wystarcza na 3
+                                        przedłużenia.
+                                    </p>
+                                    <ul class="price__list">
+                                        <li class="price__list-header">
+                                            <span>Długość</span>
+                                            <span>Cena za 1 g</span>
+                                        </li>
+
+                                        <li class="price__row">
+                                            <span>40-45 cm</span>
+                                            <span>9 zł</span>
+                                        </li>
+                                        <li class="price__row">
+                                            <span>50-55 cm</span>
+                                            <span>12 zł</span>
+                                        </li>
+                                        <li class="price__row">
+                                            <span>60-65 cm</span>
+                                            <span>14 zł</span>
+                                        </li>
+                                        <li class="price__row">
+                                            <span>70-75 cm</span>
+                                            <span>18 zł</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="price__image">
+                                    <picture>
+                                        <source srcset="assets/images/standart.webp" type="image/webp">
+                                        <img src="assets/images/standart.jpg" alt="Standard">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price__tab-panel" id="lux">
+                            <div class="price__body">
+                                <div class="price__content">
+                                    <p class="price__description">
+                                        To włosy ścięte z jednej głowy, które były rozjaśniane lub farbowane. Mogą być
+                                        proste, falowane, kręcone . Wystarcza na 5–6 przedłużeń.
+                                    </p>
+                                    <ul class="price__list">
+                                        <li class="price__list-header">
+                                            <span>Długość</span>
+                                            <span>Cena za 1 g</span>
+                                        </li>
+
+                                        <li class="price__row">
+                                            <span>40 - 49 cm</span>
+                                            <span>14 zł</span>
+                                        </li>
+                                        <li class="price__row">
+                                            <span>50 - 59 cm</span>
+                                            <span>18 zł</span>
+                                        </li>
+                                        <li class="price__row">
+                                            <span>60 - 69 cm</span>
+                                            <span>22 zł</span>
+                                        </li>
+                                        <li class="price__row">
+                                            <span>70 - 79 cm</span>
+                                            <span>26 zł</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="price__image">
+                                    <picture>
+                                        <source srcset="assets/images/lux.webp" type="image/webp">
+                                        <img src="assets/images/lux.jpg" alt="Lux">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price__tab-panel" id="exclusive">
+                            <div class="price__body">
+                                <div class="price__content">
+                                    <p class="price__description">
+                                        To włosy ścięte z jednej głowy, przeważnie dziecięce, dziewicze. Niefarbowane,
+                                        naturalne blondy i jasne brązy. Wystarcza na 6 i więcej przedłużeń. Mogą mieć
+                                        różne struktury.
+                                    </p>
+                                    <ul class="price__list">
+                                        <li class="price__list-header">
+                                            <span>Długość</span>
+                                            <span>Cena za 1 g</span>
+                                        </li>
+
+                                        <li class="price__row">
+                                            <span>35 - 42 cm</span>
+                                            <span>16 zł</span>
+                                        </li>
+                                        <li class="price__row">
+                                            <span>42 - 50 cm</span>
+                                            <span>19 zł</span>
+                                        </li>
+                                        <li class="price__row">
+                                            <span>50 - 56 cm</span>
+                                            <span>23 zł</span>
+                                        </li>
+                                        <li class="price__row">
+                                            <span>56 - 62 cm</span>
+                                            <span>26 zł</span>
+                                        </li>
+                                        <li class="price__row">
+                                            <span>62 - 70 cm</span>
+                                            <span>29 zł</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="price__image">
+                                    <picture>
+                                        <source srcset="assets/images/exclusive.webp" type="image/webp">
+                                        <img src="assets/images/exclusive.jpg" alt="Exclusive">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price__item price__item--sub">
+                    <h4 class="price__sub-title">Założenie włosów naturalnych</h4>
+                    <div class="price__body">
+                        <div class="price__content">
+                            <ul class="price__list">
+                                <li class="price__row">
+                                    <span>50 gr</span>
+                                    <span>450 zł</span>
+                                </li>
+                                <li class="price__row">
+                                    <span>do 100 gr</span>
+                                    <span>650 zł</span>
+                                </li>
+                                <li class="price__row">
+                                    <span>do 130 gr</span>
+                                    <span>800 zł</span>
+                                </li>
+                                <li class="price__row">
+                                    <span>do 150 gr</span>
+                                    <span>990 zł</span>
+                                </li>
+                                <li class="price__row">
+                                    <span>do 170 gr</span>
+                                    <span>1100 zł</span>
+                                </li>
+                                <li class="price__row">
+                                    <span>do 200 gr</span>
+                                    <span>1200 zł</span>
+                                </li>
+                            </ul>
+                            <p class="price__note price__note--important">
+                                <strong>WAŻNE:</strong>
+                                Koszt włosów nie jest wliczony w cenę usługi
+                            </p>
+                        </div>
+                        <div class="price__image price__image--duo">
+                            <picture>
+                                <source srcset="assets/images/założenie-3.webp" type="image/webp">
+                                <img src="assets/images/założenie-3.jpg" alt="Założenie">
+                            </picture>
+                            <picture>
+                                <source srcset="assets/images/założenie-2.webp" type="image/webp">
+                                <img src="assets/images/założenie-2.jpg" alt="Założenie">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price__item price__item--sub">
+                    <h4 class="price__sub-title">Podciągnięcie włosów</h4>
+                    <div class="price__body">
+                        <div class="price__content">
+                            <p class="price__note">
+                                (zdjęcie włosów, umycie włosów, wykonanie nowych łączeń, umycie głowy)
+                            </p>
+                            <ul class="price__list">
+                                <li class="price__row">
+                                    <span>50 gr</span>
+                                    <span>650 zł</span>
+                                </li>
+                                <li class="price__row">
+                                    <span>do 100 gr</span>
+                                    <span>850 zł</span>
+                                </li>
+                                <li class="price__row">
+                                    <span>do 130 gr</span>
+                                    <span>950 zł</span>
+                                </li>
+                                <li class="price__row">
+                                    <span>do 150 gr</span>
+                                    <span>1100 zł</span>
+                                </li>
+                                <li class="price__row">
+                                    <span>do 170 gr</span>
+                                    <span>1200 zł</span>
+                                </li>
+                                <li class="price__row">
+                                    <span>do 200 gr</span>
+                                    <span>1300 zł</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price__image price__image--duo price__image--mobile-row">
+                            <picture>
+                                <source srcset="assets/images/podciąganie-włosów.webp" type="image/webp">
+                                <img src="assets/images/podciąganie-włosów.jpg" alt="Podciągnięcie">
+                            </picture>
+                            <picture>
+                                <source srcset="assets/images/podciąganie-włosów-2.webp" type="image/webp">
+                                <img src="assets/images/podciąganie-włosów-2.jpg" alt="Podciągnięcie">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price__item price__item--sub">
+                    <h4 class="price__sub-title">Zagęszczenia i Założenie małej gramatury</h4>
+                    <div class="price__body">
+                        <div class="price__content">
+                            <p class="price__note">
+                                (Krótkie włosy do 40 cm - cena liczona jest w zależności od ilości pasemek)
+                            </p>
+                            <ul class="price__list">
+                                <li class="price__row">
+                                    <span>Założenie za 1 pasemko</span>
+                                    <span>5 zł</span>
+                                </li>
+                                <li class="price__row">
+                                    <span>Korekta za 1 pasemko</span>
+                                    <span>6.5 zł</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price__image price__image--duo price__image--mobile-row">
+                            <picture>
+                                <source srcset="assets/images/zagęszczenie-1.webp" type="image/webp">
+                                <img src="assets/images/zagęszczenie-1.jpg" alt="Zagęszczenia i Założenie">
+                            </picture>
+                            <picture>
+                                <source srcset="assets/images/zagęszczenie-2.webp" type="image/webp">
+                                <img src="assets/images/zagęszczenie-2.jpg" alt="Zagęszczenia i Założenie">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="price__item">
+                <h3 class="price__category-title">Usługi dodatkowe:</h3>
+                <div class="price__body price__body--full">
+                    <div class="price__content price__content--wide">
+                        <ul class="price__list">
+                            <li class="price__row">
+                                <span>Ściąganie włosów bez korekty</span>
+                                <span>150 zł</span>
+                            </li>
+                            <li class="price__row">
+                                <span>Ściąganie włosów po innym salonie</span>
+                                <span>250 zł</span>
+                            </li>
+                            <li class="price__row">
+                                <span>Rozczesywanie kołtunów</span>
+                                <span>100 zł / 1 godzina</span>
+                            </li>
+                            <li class="price__row">
+                                <span>Modelowanie włosów w fale</span>
+                                <span>150 zł</span>
+                            </li>
+                            <li class="price__row">
+                                <span>Farbowanie odrostów farbą klientki</span>
+                                <span>100 zł</span>
+                            </li>
+                            <li class="price__row">
+                                <span>Podcięcie końcówek z umyciem głowy</span>
+                                <span>100 zł</span>
+                            </li>
+                            <li class="price__row">
+                                <span>Podcięcie końcówek bez umycia głowy</span>
+                                <span>50 zł</span>
+                            </li>
+                            <li class="price__row price__row--extra">
+                                <span>Przedłużanie włosów na 4 ręce</span>
+                                <span>+ 250 zł</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="course" id="course">
+            <h2 class="section-title">Oferta szkoleń</h2>
+
+            <div class="course__card">
+
+                <div class="course__header">
+                    <div class="course__intro-wrapper">
+                        <div class="course__header-content">
+                            <span class="course__tag">3 dni</span>
+                            <h3 class="course__title">Podstawowy kurs przedłużania włosów</h3>
+                            <p class="course__lead">
+                                3 dni, a Ty nauczysz się tworzyć naturalne, gęste i perfekcyjne włosy,
+                                pracując na manekinach i modelkach, z doborem koloru, struktury i sekretami
+                                kapsułkowania.
+                            </p>
+                        </div>
+                        <div class="course__header-image">
+                            <picture>
+                                <source srcset="assets/images/course.webp" type="image/webp">
+                                <img src="assets/images/course.jpg" alt="Kurs przedłużania włosów">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course__body">
+
+                    <div class="course__program">
+                        <h4 class="course__program-title">Program kursu:</h4>
+
+                        <div class="course__day">
+                            <div class="course__day-header">
+                                <span class="course__day-num">1&nbsp;dzień</span>
+                                <span class="course__day-label">
+                                    Teoria i praktyka na manekinie
+                                </span>
+                            </div>
+                            <ul class="course__list">
+                                <li>
+                                    <span>
+                                        Kapsułkowanie trzema metodami. Wszystkie sekrety prawidłowego przedłużania
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        Dobór włosów pod kątem koloru, struktury i preferencji klienta
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        Przygotowanie włosów: farbowanie, obróbka, kontrola jakości
+                                    </span>
+                                <li>
+                                    <span>
+                                        Przygotowanie keratyny: kolor, wytrzymałość
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        Techniki mieszania koloru włosów
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="course__day">
+                            <div class="course__day-header">
+                                <span class="course__day-num">2&nbsp;dzień</span>
+                                <span class="course__day-label">Praktyka na modelce</span>
+                            </div>
+                            <ul class="course__list">
+                                <li>
+                                    <span>
+                                        Zagęszczanie włosów, praca w problematycznych i delikatnych strefach
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="course__day">
+                            <div class="course__day-header">
+                                <span class="course__day-num">3&nbsp;dzień</span>
+                                <span class="course__day-label">Praktyka na modelce</span>
+                            </div>
+                            <ul class="course__list">
+                                <li>
+                                    <span>
+                                        Pełne przedłużanie, finalne strzyżenie i układanie włosów
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="course__aside">
+                        <div class="course__benefits">
+                            <h4 class="course__benefits-title">Co otrzymujesz:</h4>
+                            <ul class="course__benefits-list">
+                                <li>
+                                    <span>
+                                        Indywidualne podejście i praca pod kierunkiem mistrza z 6-letnim doświadczeniem
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        Baza dostawców wszystkich materiałów po kosztach
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        Zestaw startowy w prezencie
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="course__price-block">
+                            <span class="course__price-label">Koszt szkolenia</span>
+                            <span class="course__price-value">3500 zł</span>
+                            <!-- <a href="#contacts" class="hero__btn">Zapisz się</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="contacts" id="contacts">
+            <h2 class="section-title">Kontakt</h2>
+
+            <div class="contacts__inner">
+                <a href="tel:+48732574166" class="contacts__link">
+                    <span class="contacts__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .82h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.72a16 16 0 006.29 6.29l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                        </svg>
+                    </span>
+                    <span class="contacts__label">Telefon</span>
+                    <span class="contacts__value">+48 73 257 41 66</span>
+                </a>
+
+                <div class="contacts__divider"></div>
+
+                <a href="https://instagram.com/prohair_pl" target="_blank" rel="noopener" class="contacts__link">
+                    <span class="contacts__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <circle cx="12" cy="12" r="4" />
+                            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none" />
+                        </svg>
+                    </span>
+                    <span class="contacts__label">Instagram</span>
+                    <span class="contacts__value">@prohair_pl</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__column">
+                <span class="footer__label">Adres</span>
+                <p class="footer__content">
+                    Zamoyskiego 49, lok.11<br>
+                    03-801 Warszawa
+                </p>
+            </div>
+
+            <div class="footer__column">
+                <span class="footer__label">Dane firmy</span>
+                <p class="footer__content">
+                    ProHair_pl<br>
+                    Anna Luchyk<br>
+                    NIP: 5273046400<br>
+                </p>
+            </div>
+
+            <div class="footer__column">
+                <span class="footer__label">Dane kontaktowe</span>
+                <div class="footer__content">
+                    <a href="tel:+48732574166" class="footer__link">+48 732 574 166</a>
+                    <a href="mailto:annalucik923@gmail.com" class="footer__link">annalucik923@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="footer__column">
+                <span class="footer__label">Dokumenty</span>
+                <div class="footer__content">
+                    <a href="regulamin.html" class="footer__link">Regulamin</a>
+                    <a href="rodo.html" class="footer__link">RODO</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2026 Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

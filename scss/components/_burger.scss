@@ -1,0 +1,70 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.burger {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2000;
+    padding: 10px;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+
+    span {
+        display: block;
+        height: 2px;
+        background-color: $dark-brown;
+        transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1),
+            opacity 0.3s ease,
+            width 0.3s ease;
+
+        &:nth-child(1) {
+            width: 24px;
+        }
+
+        &:nth-child(2) {
+            width: 16px;
+        }
+
+        &:nth-child(3) {
+            width: 20px;
+        }
+    }
+
+    &:hover span {
+        background-color: $light-brown;
+
+        &:nth-child(n) {
+            width: 24px;
+        }
+    }
+
+    &.active {
+        span:nth-child(1) {
+            width: 24px;
+            transform: translateY(7px) rotate(45deg);
+            background: $light-brown;
+        }
+
+        span:nth-child(2) {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+
+        span:nth-child(3) {
+            width: 24px;
+            transform: translateY(-9px) rotate(-45deg);
+            background: $light-brown;
+        }
+    }
+
+    @include tablet {
+        display: none;
+    }
+}
